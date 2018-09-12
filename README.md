@@ -11,6 +11,9 @@
 [index09.html](basic/index09.html)<br>
 [index10.html](basic/index10.html)<br>
 
+## atividade d3_intro
+[index10.html](d3_intro/movies_d3.html)<br>
+
 ---
 
 Para saber mais sobre a sintaxe markdown, veja [este guia](https://guides.github.com/features/mastering-markdown/).
