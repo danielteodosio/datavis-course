@@ -1,0 +1,44 @@
+.bar1{
+	
+	background-color: rgb(200,200,250);
+	min-width: 35px;
+    min-height: 5px;
+    font-size: 12px
+    
+ }
+
+ .bar2{
+	
+	background-color: rgb(250,200,200);
+	min-width: 35px;
+    min-height: 5px;
+    font-size: 12px
+    
+ }
+
+ .bar3{
+	
+	background-color: rgb(200,250,200);
+	min-width: 35px;
+    min-height: 5px;
+    font-size: 12px
+   }
+
+ .label{
+  width: 35px;
+  height: 150px;
+ }
+
+span{
+  font-size: 12px;
+
+  writing-mode: vertical-rl;
+}
+
+
+.title{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
