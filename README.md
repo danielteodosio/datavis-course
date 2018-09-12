@@ -12,7 +12,7 @@
 [index10.html](basic/index10.html)<br>
 
 ## atividade d3_intro
-[index10.html](d3_intro/movies_d3.html)<br>
+[movies_d3.html](d3_intro/movies_d3.html)<br>
 
 ---
 
