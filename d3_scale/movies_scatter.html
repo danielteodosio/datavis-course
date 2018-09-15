@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Scatterplot</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+<div id="chart"></div>
+<script type="text/javascript">
+
+function render(data){
+
+
+let margin = {top:60, bottom:60, right:60, left:60};
+
+var height = 400 - margin.top - margin.bottom;
+var width = 1300 - margin.right - margin.left;
+
+//var xyvalues = [];
+var x = [];
+var y = [];
+
+for(i = 0; i < data.length; i++){
+    x.push(data[i].Budget_M);
+    y.push(data[i].Worldwide_Gross_M);
+   //alert(x);
+   //xyvalues.push([x,y]);
+   
+}
+
+let scalex = d3.scaleLinear().domain([0, d3.max(x)]).range([0, width]);
+scalex.clamp(true);
+let scaley = d3.scaleLinear().domain([0, d3.max(y)]).range([height, 0]);
+scaley.clamp(true);
+
+let axisY = d3.axisLeft().scale(scaley).ticks(5);
+let axisX = d3.axisBottom().scale(scalex);
+
+//svg.append("g")
+//.attr("transform", "translate(0," + width + ")")
+//.call(axisX);
+
+let svg = d3.select("#chart").append("svg").
+attr("width", width + margin.left + margin.right).
+attr("height", height + margin.top + margin.bottom).append("g").
+attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+svg.selectAll("circle").data(data).enter().append("circle").
+attr("cx", function(d,i){return scalex(d.Budget_M);}).
+attr("cy", function(d,i){return scaley(d.Worldwide_Gross_M);}).
+attr("r", 3);
+
+
+// svg.selectAll("text")
+// .data(data)
+// .enter()
+// .append("text")
+// .attr("x", function(d){
+// return scalex(d.Budget_M);
+// })
+// .attr("y", function(d){
+// return scaley(d.Worldwide_Gross_M);
+// })
+// .attr("font-family", "sans-serif")
+// .attr("font-size", "11px")
+// .attr("fill", "red")
+// .text(function(d) {
+// return d.Film;
+// });
+
+
+svg.append("g")
+.attr("transform", "translate(0," + height + ")")
+.call(axisX);
+
+svg.append("g")
+.call(axisY);
+
+svg.append("text")
+.attr("transform", "translate(" + (width/2) + "," + (height + margin.bottom) + ")")
+.style("text-anchor", "middle")
+.attr("font-family", "sans-serif")
+.attr("font-size", "12px")
+.text("Orçamento");
+
+
+svg.append("text")
+.attr("transform", "rotate(-90)")
+.attr("y", 0 - margin.left)
+.attr("x",0 - (height / 2))
+.attr("dy", "1em")
+.style("text-anchor", "middle")
+.attr("font-family", "sans-serif")
+.attr("font-size", "12px")
+.text("Bilheteria");
+
+};
+
+
+ d3.json("data/movies.json").then(function(json){ 
+ 
+    render(json);
+
+ });
+
+</script>
+</body>
+</html>
