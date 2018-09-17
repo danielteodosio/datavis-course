@@ -17,6 +17,9 @@
 ## atividade d3_scale (As repostas para as perguntas estão no README.md da pasta da atividade.)
 [movies_scatter.html](d3_scale/movies_scatter.html)<br>
 
+## atividade d3_update 
+[01_scatterplot.html](d3_update/01_scatterplot.html)<br>
+
 ---
 
 Para saber mais sobre a sintaxe markdown, veja [este guia](https://guides.github.com/features/mastering-markdown/).
