@@ -20,6 +20,10 @@
 ## atividade d3_update 
 [01_scatterplot.html](d3_update/01_scatterplot.html)<br>
 
+## atividade d3_crossfilter 
+[acoes.html](d3_crossfilter/acoes.html)<br>
+[movies_d3_dc.html](d3_crossfilter/movies_d3_dc.html)<br>
+
 ---
 
 Para saber mais sobre a sintaxe markdown, veja [este guia](https://guides.github.com/features/mastering-markdown/).
