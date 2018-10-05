@@ -24,7 +24,7 @@
 [acoes.html](d3_crossfilter/acoes.html)<br>
 [movies_d3_dc.html](d3_crossfilter/movies_d3_dc.html)<br>
 
-## atividade d3_crossfilter2
+## atividade d3_crossfilter2 (atualizado com mapa)
 [earthquakes.html](d3_crossfilter_2/earthquakes.html)<br>
 
 ---
