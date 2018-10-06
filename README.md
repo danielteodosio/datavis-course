@@ -27,6 +27,9 @@
 ## atividade d3_crossfilter2 (atualizado com mapa)
 [earthquakes.html](d3_crossfilter_2/earthquakes.html)<br>
 
+## atividade: mapa de crimes em em chicago com leaflet.
+[chicago.html](crimes_chicago/chicago.html)<br>
+
 ---
 
 Para saber mais sobre a sintaxe markdown, veja [este guia](https://guides.github.com/features/mastering-markdown/).
