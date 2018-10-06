@@ -100,7 +100,7 @@
     .keyAccessor(function(d) { return +d.key[1]; }).valueAccessor(function(d) { return +d.value; }).colorAccessor(function(d){
         //console.log(d.key);
         return d.key;
-    }).colors(colorScale)
+    }).colors(colorScale).legend(dc.legend().x(600).y(0).itemHeight(13).gap(5).horizontal(1).legendWidth(340).itemWidth(80))
     .elasticY(true);
 
 
