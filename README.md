@@ -30,6 +30,9 @@
 ## atividade: mapa de crimes em em chicago com leaflet.
 [chicago.html](crimes_chicago/chicago.html)<br>
 
+## atividade: musicas e lesmiserables.
+[lesmiserables.html](d3_networks_trees/lesmiserables.html)<br>
+[songs.html](d3_networks_trees/songs.html)<br>
 ---
 
 Para saber mais sobre a sintaxe markdown, veja [este guia](https://guides.github.com/features/mastering-markdown/).
