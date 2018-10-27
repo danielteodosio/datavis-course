@@ -33,6 +33,10 @@
 ## atividade: musicas e lesmiserables.
 [lesmiserables.html](d3_networks_trees/lesmiserables.html)<br>
 [songs.html](d3_networks_trees/songs.html)<br>
+
+## atividade: Cores d3.
+[crimes.html](color-d3/crimes.html)<br>
+[usa.html](color-d3/usa.html)<br>
 ---
 
 Para saber mais sobre a sintaxe markdown, veja [este guia](https://guides.github.com/features/mastering-markdown/).
